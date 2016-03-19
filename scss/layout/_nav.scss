@@ -1,0 +1,325 @@
+.navbar {
+	margin-bottom: 0rem;
+}
+#navbar {
+	margin-top: 1.4rem;
+}
+.navbar-nav {
+	.active-trail {
+		border-bottom: solid 2px #337ab7;
+	}
+}
+.navbar-header {
+	padding-top: .8rem;
+}
+/* ---- Home Page ---- */
+.headericon {
+	margin-top: 3.0rem;
+	margin-bottom: 4.0rem;
+}
+.well-adjust{
+	margin-bottom: 0rem;
+}
+.header-logo{
+	display: inline;
+}
+/* ---- Language Select Menu ---- */
+.region-nav {
+	min-height: 45rem;
+	&.lightbluebox {
+		background: $light-blue;
+		h2 {
+		color: $dark-purple;
+		}
+	}
+	&.purplebox{
+		background: $dark-purple;
+	}
+	&.well-adjust {
+		margin-bottom: 0rem;
+		padding-bottom: 4rem;
+		min-height: 495px;
+	}
+	p {
+		font-size: 1.8rem;
+		color: $white;
+		letter-spacing: 0.05rem;
+		padding: 1rem 0.5rem 2rem 0.5rem;
+	}
+	img {
+		height: 100%;
+		display: block;
+    	margin: 0 auto;
+	}
+	
+	.icon {
+    	padding: 4rem 0rem 1rem 0rem;
+    	}
+	.button {
+		padding: 1.2rem 5rem 1.2rem 2rem;
+		margin-left: -1.3rem;
+		height: 100%;
+		width: 355px;
+		border-radius: 5.0rem;
+		background-color: transparent;
+		border-style: none;
+		background: url("../images/icons/buttons/down-arrow.png") no-repeat 31rem center;
+	}
+	@include media("<sm") {
+		.button {
+			width: 330px;
+			background: url("../images/icons/buttons/down-arrow.png") no-repeat 29rem center;
+		}
+	}
+	.bluebutton {
+    	color: $dark-purple;
+	}	
+	.purplebutton {
+		color: $light-blue;
+		box-shadow: 0 0rem 0rem 0 rgba(0,175,222,0.2), 0 0.5rem 1.0rem 0 rgba(0,175,222,0.19);
+	}
+	.dropdown-menu {
+		margin-bottom: -5rem;
+		li:first-child {
+			color: $dark-purple;
+			padding:0.3rem 3rem 0.3rem 2rem;
+			background: url("../images/icons/buttons/x-icon.png") no-repeat 31rem center;
+			border-bottom: 0.05rem solid $gray;
+		}
+		li {
+			line-height: 5rem;
+			font-size: 2.0rem;
+			font-family: 'Raleway Regular', sans-serif;
+		}
+		img {
+			margin-right: 2rem;
+		}
+		a {
+			color: $dark-purple;
+			line-height: 9rem;
+			border-left: 0.5rem solid $white;
+			&.eu-flag{
+				padding-left: 8.6rem;
+				background: url("../images/icons/eu-flag.png") no-repeat 2rem center;
+			}
+			&.de-flag{
+				padding-left: 8.6rem;
+				background: url("../images/icons/ger-flag.png") no-repeat 2rem center;
+			}
+			&.us-flag{
+				padding-left: 8.6rem;
+				background: url("../images/icons/us-flag.png") no-repeat 2rem center;
+			}
+			&.eu-flag, &.de-flag{
+				border-bottom: 0.05rem solid $gray;
+			}
+			&.eu-flag, &.de-flag, &.us-flag{
+				border-left: 0.7rem solid $white;
+				padding-right: 4rem;
+			}
+			&:hover, &:focus {
+				background-color: #bfebf7;
+				border-left: 0.7rem solid $dark-purple;
+			}
+		}
+	}
+}
+/* ---- Navigation For Other Pages ---- */
+
+.secondary {
+	background-color: $dark-purple;
+	font-family: 'Raleway Regular', sans-serif;
+	color: $light-purple;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	.btn {
+	font-size: 1.6rem;
+		span.change {
+			padding-left: 0.5rem;
+			padding-right: 2rem;
+			background: url("../images/icons/buttons/dd-open-arrow.png") no-repeat right center;
+		}
+		&:visited, &:hover, &:focus, &:active {
+			color: $light-purple;
+		}
+	}
+	.eu-flag{
+		padding-left: 5.5rem;
+		background: url("../images/icons/eu-en-flag.png") no-repeat 1.5rem center;
+	}
+	.de-flag{
+		padding-left: 5.5rem;
+		background: url("../images/icons/ger-small.png") no-repeat 1.5rem center;
+	}
+	.us-flag{
+		padding-left: 5.5rem;
+		background: url("../images/icons/us-small.png") no-repeat 1.5rem center;
+	}
+	.navbar-link {
+		background-color: transparent;
+		font-family: 'Raleway Medium', sans-serif;
+		color: $light-blue;
+		font-size: 1.6rem;
+	}
+	.dropdown {
+    	position: relative;
+    	display: inline-block;
+	}
+	@include media(">md") {
+		ul.dropdown-menu {
+			padding-top: 0rem;
+			padding-bottom: 0rem;
+			margin-top: 0.4rem;
+			margin-left: 0.7rem;
+			color: $dark-purple;
+			font-size: 1.6rem;
+			li > a {
+				border-left: 0.5rem solid $white;
+				&.eu-flag, &.de-flag{
+					border-bottom: 0.05rem solid $gray;
+				}
+				&.eu-flag, &.de-flag, &.us-flag{
+					line-height: 4rem;
+					border-left: 0.7rem solid $white;
+					padding-right: 4rem;
+				}
+				&:hover, &:focus {
+					background-color: #bfebf7;
+					border-left: 0.7rem solid $dark-purple;
+				}
+			}
+		}
+	}
+	@include media("<md") {
+		padding-bottom: 0rem;
+		padding-top: 0rem;
+		margin: 0rem;
+		text-align: center;
+		.eu-flag{
+			padding-left: 8.6rem;
+			background: url("../images/icons/eu-en-flag.png") no-repeat 4.8rem center;
+		}
+		.de-flag{
+			padding-left: 8.6rem;
+			background: url("../images/icons/ger-small.png") no-repeat 4.8rem center;
+		}
+		.us-flag{
+			padding-left: 8.6rem;
+			background: url("../images/icons/us-small.png") no-repeat 4.8rem center;
+		}
+		ul.dropdown-menu {
+			font-size: 1.6rem;
+			margin-top: 0.4rem;
+			margin-left: 2.7rem;
+			li > a {
+				color: $gray;
+				&.eu-flag, &.de-flag, &.us-flag{
+					padding-left: 8.6rem;
+					line-height: 5rem;
+					border-left: 0.7rem solid $dark-purple;
+				}
+				&:hover, &:focus {
+					color: $dark-purple;
+					background-color: #bfebf7;
+					border-left: 0.7rem solid $dark-purple;
+				}
+			}
+		}
+	}
+}
+.navmain {
+	background: $white;
+	border-style: none;
+	&.navbar-default {
+		.navbar-nav > .dropdown {
+			&.open > a {
+				&:link, &:visited, &:hover, &:focus{
+				background: transparent;
+				border-bottom-style: solid;
+				border-color: $light-blue;
+				color: $dark-purple;
+				}
+			}
+		}
+		.navbar-collapse {
+			padding-left: 0rem;
+		}
+		.dropdown-toggle {
+			font-size: 2.2rem;
+			font-family: 'Raleway Regular', sans-serif;
+			color: $dark-purple;
+			border-bottom-style: solid;
+			border-color: $white;
+			&:hover, &:focus &:active{
+				background: transparent;
+				border-bottom-style: solid;
+				border-color: $light-blue;
+				background-color: $white;
+			}
+		}
+	}
+	ul.dropdown-menu {		
+			padding-top: 0rem;
+			padding-bottom: 0rem;
+			li > a {
+				color: $dark-purple;
+				font-family: 'Raleway Regular', sans-serif;
+				font-size: 1.6rem;
+				border-bottom: 0.05rem solid $gray;
+				line-height: 4rem;
+				border-left: 0.7rem solid $white;
+				&:hover, &:focus {
+					background-color: #bfebf7;
+					border-left: 0.7rem solid $dark-purple;
+				}
+			}
+		}
+	@include media(">lg") {
+		.dropdown > a {
+			margin-left: 3rem;
+		}
+	}
+	@include media(">md", "<lg") {
+		.dropdown {
+			margin-left: 1rem;
+		}
+		ul.dropdown-menu {		
+			li > a {
+				border-left: 0.7rem solid $white;
+				&:hover, &:focus {
+					background-color: #bfebf7;
+					border-left: 0.7rem solid $dark-purple;
+				}
+			}
+		}
+	}
+	@include media("<md") {
+		&.navbar-default{
+			border-style: none;
+			.navbar-toggle {
+				border: none;
+				background: transparent;
+				padding-right: 4rem;
+				padding-top: 1.1rem;
+				.icon-bar {
+					background-color: $light-blue;
+				}
+			}	
+		}
+		.navbar-right {
+			margin: 0rem;
+			padding-top: 1.4rem;
+		}
+	}
+	@include media("<md") {
+		.navbar-toggle {
+			padding-right: 0rem;
+			padding-top: 0rem;
+		}	
+	}
+}
+.headertext {
+	margin-top: 9rem;
+	margin-bottom: 9rem;
+	text-align: center;
+}

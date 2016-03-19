@@ -1,0 +1,34 @@
+// Bootstrap library.
+@import "bootstrap";
+
+// Helper files
+@import
+  "helpers/variables",
+  "helpers/functions",
+  "helpers/mixins";
+
+// 3rd party vendors
+@import
+  "vendors/include_media";
+
+// Default CSS styles
+@import
+  "base/typography";
+
+// Layout styles
+@import
+  "layout/nav",
+  "layout/grid",
+  "layout/header",
+  "layout/footer",
+  "layout/sidebar";
+
+// Components are features or widgets that can can be encapsulated
+@import
+  "components/buttons",
+  "components/elements",
+  "components/forms";
+
+// Individual page styles
+@import
+  "pages/home";

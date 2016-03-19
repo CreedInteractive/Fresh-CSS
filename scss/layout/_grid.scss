@@ -1,0 +1,10 @@
+$colSize: (sm, xs, md, lg);
+$colNo: 12;
+
+@for $i from 1 through length($colSize) {
+  @for $j from 1 through length($colNo) {
+    .col-#{nth($colSize, $i)}-#{$j} {
+      @extend %colDefault;
+    }
+  }
+}

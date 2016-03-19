@@ -1,0 +1,33 @@
+.footer {
+  @include media("<md") {
+    text-align: center;
+  }
+  background-color: $white;
+  font-family: 'Raleway Regular', sans-serif;
+  width: 100%;
+  border-style: none; 
+  ul{
+    list-style-type: none;
+    text-align: left;
+  }
+  li{
+    padding-top: 15px;
+  }
+  p {
+    line-height: 4.4rem;
+  }
+  .footlogo {
+    display: inline;
+  }
+  .copyright {
+    color: $gray;
+    text-align: center;
+  }
+  .policy {
+    @include media(">lg") {
+      text-align: right;
+    }
+  }
+}
+
+
