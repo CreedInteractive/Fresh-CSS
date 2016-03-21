@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+h1 {
+  font-size: 4.8rem;
+  color: $dark-purple;
+  font-family: 'Raleway Regular', sans-serif;
+}
+h2 {
+  font-size: 3.6rem;
+  font-family: 'Raleway Regular', sans-serif;
+  padding: 1rem 0rem 1rem 0rem;
+}
+h3 {
+  font-size: 3.0rem;
+  color: $dark-purple;	
+}
+h5 {
+  font-size: 1.8rem;
+  font-family: 'Raleway SemiBold', sans-serif;
+  color: $dark-purple;  
+}
+img {
+  display: block;
+  clear: right;
+  max-width: 100%;
+  max-height: auto;
+}
+p {
+  font-size: 1.6rem;
+  font-family: 'Raleway Regular', sans-serif;
+  letter-spacing: 0.05rem;
+}
+a {
+  color: $light-blue;
+}

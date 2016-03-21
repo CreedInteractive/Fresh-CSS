@@ -28,15 +28,14 @@ gulp.task('bower', function() {
 
 // Run sass compiler with Pleeease post compiler
 gulp.task('sass', function() {
-    return sass('themes/custom/microt/scss/*.scss', {
+    return sass('scss/*.scss', {
       sourcemap: true,
       style: "nested",
               loadPath: [
                   'sass',
-             config.bowerDir + '/bootstrap-sass/assets/stylesheets',
-             config.bowerDir + '/normalize-scss/sass',
-             config.bowerDir + '/support-for/sass',
-             config.bowerDir + '/font-awesome/scss',
+               config.bowerDir + '/normalize-scss/sass',
+               config.bowerDir + '/support-for/sass',
+               config.bowerDir + '/font-awesome/scss',
               ]
      })
     .on("error", notify.onError(function (error) {
@@ -47,33 +46,32 @@ gulp.task('sass', function() {
     .pipe(bowerNormalizer({bowerJson: './bower.json'}))
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('themes/custom/microt/'))
+    .pipe(gulp.dest('assets'))
     .pipe(livereload());
 });
 
 gulp.task('sass_prod', function() { 
-    return sass('themes/custom/microt/scss/*.scss', {
+    return sass('scss/*.scss', {
       sourcemap: false,
       style: "compressed",
               loadPath: [
                   'sass',
-             config.bowerDir + '/bootstrap-sass/assets/stylesheets',
-             config.bowerDir + '/normalize-scss/sass',
-             config.bowerDir + '/support-for/sass'
+               config.bowerDir + '/normalize-scss/sass',
+               config.bowerDir + '/support-for/sass'
               ]
      })
     .on("error", notify.onError(function (error) {
          return "Error: " + error.message;
     }))
     .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
-    .pipe(gulp.dest('themes/custom/microt/')); 
+    .pipe(gulp.dest('assets')); 
 });
 
 
 // Watch Files For Changes
 gulp.task('watch', function() {
   livereload.listen();
-  gulp.watch('themes/custom/microt/scss/**/*.scss', ['sass']);
+  gulp.watch('scss/**/*.scss', ['sass']);
 });
 
 // Build Tasks

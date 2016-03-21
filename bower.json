@@ -1,6 +1,6 @@
 {
-  "name": "Camp Odayin",
-  "description": "Bower setup for Creed Interactive client",
+  "name": "Creed Base",
+  "description": "Bower setup for Creed Interactive's Base CSS Framework",
   "main": "",
   "authors": [
     "Shashi Lo <shashi@creedinteractive.com>"
@@ -17,8 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.2.0",
-    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
     "normalize-scss": "normalize.scss#~4.0.3",
     "font-awesome": "fontawesome#~4.5.0"
   },

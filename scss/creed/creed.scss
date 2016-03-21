@@ -1,0 +1,22 @@
+// Layout styles
+@import
+  "layout/nav",
+  "layout/grid",
+  "layout/header",
+  "layout/footer",
+  "layout/sidebar";
+
+// Components are features or widgets that can can be encapsulated
+@import
+  "components/buttons",
+  "components/elements",
+  "components/forms";
+
+// Individual page styles
+@import
+  "pages/home";
+
+
+// Base Styles
+@import
+  "base/custom";
