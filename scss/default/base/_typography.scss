@@ -1,55 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,300);
+
 @font-face {
-    font-family: 'Raleway Regular';
-    src: url('../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
-    font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-    font-family: 'Raleway Medium';
-    src: url('../fonts/Raleway/Raleway-Medium.ttf') format('truetype');
-    font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-    font-family: 'Raleway SemiBold';
-    src: url('../fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-family: 'Proxima Nova Bold';
+    src: url('../../fonts/ProximaNova-Xbold-webfont.eot');
+    src: url('../fonts/ProximaNova-Xbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Xbold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Xbold-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Xbold-webfont.svg#proxima_nova_thextrabold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Raleway Bold';
-    src: url('../fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Reg-webfont.eot');
+    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-@font-face {
-    font-family: 'Arapey Italic';
-    src: url('../fonts/Arapey/Arapey-Italic.ttf') format('truetype');
-    font-weight: normal;
-	font-style: normal;
-}
-.lineheight-1 {
-    line-height: 2.8rem;
-}
-.lineheight-2 {
-    line-height: 2.2rem;
-    letter-spacing: 0.05rem;
-}
-.lineheight-3 {
-    line-height: 3.0rem;
-}
-.lightbluetext {
-    color: $light-blue;
-}
-.whitetext {
-    color: #ffffff;
-}
-.purpletext {
-    color: $dark-purple;
-}
-.small-font {
-    font-size: 1.4rem;
-}
-.bold-title {
-    font-family: 'Raleway Bold', sans-serif;
+
 }

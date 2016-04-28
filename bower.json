@@ -18,7 +18,9 @@
   ],
   "dependencies": {
     "normalize-scss": "normalize.scss#~4.0.3",
-    "font-awesome": "fontawesome#~4.5.0"
+    "font-awesome": "fontawesome#~4.5.0",
+    "susy": "^2.2.12",
+    "breakpoint-sass": "^2.7.0"
   },
   "devDependencies": {
     "font-awesome": "fontawesome#~4.5.0"

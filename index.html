@@ -10,41 +10,125 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="assets/css/main.css">
+
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <nav class="navigation">
+            <ul>
+                <li><span>Atoms (Base)</span>
+                    <ul>
+                        <li><a href="#grid">Grid</a></li>
+                        <li><a href="#color-scheme">Color Scheme</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#icons">Icons</a></li>
+                        <li><a href="#table">Table</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#input">Input</a></li>
+                        <li><a href="#media">Media</a></li>
+                    </ul>
+                </li>
+                <li><span>Molecules (Components)</span>
+                    <ul>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#notification">Notification</a></li>
+                        <li><a href="#search-bar">Search Bar</a></li>
+                    </ul>
+                </li>
+                <li><span>Organsims (Widgets)</span>
+                    <ul>
+                        <li><a href="#navigations">Navigations</a></li>
+                        <li><a href="#hero-images">Hero Images</a></li>
+                        <li><a href="#modals">Modals</a></li>
+                    </ul>
+                </li>
+                <li><span>Templates</span>
+                    <ul>
+                        <li><a href="#header">Header</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        
-        <div class="container">
-            <div class="row row-xs--4 row-md--2--4--4">
-                <div class="col">
-                    1
+        <main class="main">
+            <section class="intro">
+                <h1>Overview</h1>
+                <p>This is a style guide for visual representation only.</p>
+            </section>
+
+            <section id="grid">
+                <h2>Grid</h2>
+                <p>The methology we're trying to accomplish here is close to that of the `grid` display property. By setting your column sizes in the row, it eliminates you from writing it several times. Thus, it's easier to maintain and a lot more modular.</p>
+
+                <h3>12 Column Grid</h3>
+                <div class="row-xs-2">
+                    <div class="col">
+                        <p>2</p>
+                    </div>
+                    <div class="col">
+                        <p>2</p>
+                    </div>
+                    <div class="col">
+                        <p>2</p>
+                    </div>
+                    <div class="col">
+                        <p>2</p>
+                    </div>
+                    <div class="col">
+                        <p>2</p>
+                    </div>
+                    <div class="col">
+                        <p>2</p>
+                    </div>
                 </div>
-                <div class="col">
-                    2
+                <div class="row-xs-3">
+                    <div class="col">
+                        <p>3</p>
+                    </div>
+                    <div class="col">
+                        <p>3</p>
+                    </div>
+                    <div class="col">
+                        <p>3</p>
+                    </div>
+                    <div class="col">
+                        <p>3</p>
+                    </div>
                 </div>
-                <div class="col">
-                    3
+                <div class="row-xs-4">
+                    <div class="col">
+                        <p>4</p>
+                    </div>
+                    <div class="col">
+                        <p>4</p>
+                    </div>
+                    <div class="col">
+                        <p>4</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+                <div class="row-xs-6">
+                    <div class="col">
+                        <p>6</p>
+                    </div>
+                    <div class="col">
+                        <p>6</p>
+                    </div>
+                </div>
+                <div class="row-xs-4-2-6">
+                    <div class="col">
+                        <p>4</p>
+                    </div>
+                    <div class="col">
+                        <p>2</p>
+                    </div>
+                    <div class="col">
+                        <p>6</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <script src="assets/js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>

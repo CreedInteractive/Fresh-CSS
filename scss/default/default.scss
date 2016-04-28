@@ -1,5 +1,7 @@
 // 3rd Party Venders
 @import "normalize";
+@import "susy";
+@import "breakpoint";
 
 // Helper files
 @import
@@ -13,10 +15,12 @@
 
 // Default CSS styles
 @import
+  "base/settings",
   "base/typography";
 
 // Layout styles
 @import
+  "layout/content",
   "layout/nav",
   "layout/grid",
   "layout/header",

@@ -31,13 +31,15 @@ gulp.task('sass', function() {
     return sass('scss/*.scss', {
       sourcemap: true,
       style: "nested",
-              loadPath: [
-                  'sass',
-               config.bowerDir + '/normalize-scss/sass',
-               config.bowerDir + '/support-for/sass',
-               config.bowerDir + '/font-awesome/scss',
-              ]
-     })
+            loadPath: [
+               'sass',
+                config.bowerDir + '/normalize-scss/sass',
+                config.bowerDir + '/support-for/sass',
+                config.bowerDir + '/font-awesome/scss',
+                config.bowerDir + '/susy/sass',
+                config.bowerDir + '/breakpoint-sass/stylesheets',
+            ]
+   })
     .on("error", notify.onError(function (error) {
         return "Error: " + error.message;
      }))
@@ -54,11 +56,11 @@ gulp.task('sass_prod', function() { 
     return sass('scss/*.scss', {
       sourcemap: false,
       style: "compressed",
-              loadPath: [
-                  'sass',
+            loadPath: [
+                'sass',
                config.bowerDir + '/normalize-scss/sass',
                config.bowerDir + '/support-for/sass'
-              ]
+            ]
      })
     .on("error", notify.onError(function (error) {
          return "Error: " + error.message;

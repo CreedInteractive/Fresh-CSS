@@ -1,0 +1,231 @@
+[class^="row-"],
+[class*="row-"] {
+  margin-top: $col-gutter;
+  margin-bottom: $col-gutter;
+  display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+
+  @include clearfix();
+
+  @if ($debug) { // visualizing layout internals
+    border: 1px dashed red;
+  }
+}
+
+// Each column
+[class^="col"],
+[class*="col"] {
+    box-sizing: border-box;
+    color: #adadad;
+    float: left;
+    min-height: 1px; // prevent empty column from collapsing
+    padding-left: $col-gutter;
+    padding-right: $col-gutter;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    background: #fafafa;
+    border: 1px #e4e4e4 solid;
+    border-radius: 5px;
+
+    @if ($debug) { // visualizing layout internals
+        border: 1px dashed blue;
+    }
+}
+
+// @function explode($string,$dem) {
+//     $list: ();
+//     $sum: str-length($string);
+//
+//     @for $i from 1 through $sum {
+//         $str: str-index($string,$dem);
+//
+//         @if str-length($string) >= 1 and $str == null {
+//             $list: append($list,$string);
+//             $string: '';
+//         }
+//
+//         @if type-of($str) == number {
+//             $each: str-slice($string,0,($str - 1));
+//             $list: append($list,$each);
+//             $string: str-slice($string,($str + 1), $sum);
+//         }
+//     }
+//
+//     @return $list;
+// }
+//
+// // @for $i from 1 through $columns {
+// //   .row[class*="-#{$i}"] > .col .cols-#{$i} {
+// //     width: ((100 / $columns) * $i) * 1%;
+// //   }
+// // }
+//
+// $gridList:
+//   "row-xs-1",
+//   "row-xs-2",
+//   "row-xs-3",
+//   "row-xs-4",
+//   "row-xs-6",
+//   "row-xs-4-2-6";
+//
+// $gridcol: "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12";
+//
+//
+// @for $g from 1 through 4 {
+//   $rowList: explode(nth($gridList, $g), '-');
+//   //@debug $rowList;
+//
+//   // @if nth($rowList, 2) == 'xs' {
+//
+//     // @if length($rowList) == 6 {
+//     //   @each $num in $gridcol {
+//     //     .row[class*="#{$num}"] > .col:nth-child(4) {
+//     //       width: ((100 / $columns) * #{$num} ) * 1%;
+//     //     }
+//     //   }
+//     // }
+//
+//     // @if length($rowList) == 5 {
+//     //   @each $num in $gridcol {
+//     //     .row[class*="#{$num}"] > .col:nth-child(3) {
+//     //       width: ((100 / $columns) * #{$num}) * 1%;
+//     //     }
+//     //   }
+//     // }
+//
+//     // @if length($rowList) == 4 {
+//     //   @each $num in $gridcol {
+//     //     .row[class*="#{$num}"] > .col:nth-child(2) {
+//     //       width: ((100 / $columns) * #{$num}) * 1%;
+//     //     }
+//     //   }
+//     // }
+//
+//     @if length($rowList) == 3 {
+//
+//       // @for $num from 1 through 12 {
+//       //   .row[class*="#{$num}"] > .col:nth-child(1) {
+//       //     width: ((100 / $columns) * $num) * 1%;
+//       //   }
+//       // }
+//     }
+//   // }
+// }
+
+// $gridAsc: "12", "11", "10", "9", "8", "7", "6", "5", "4", "3", "2", "1";
+//
+// @for $num from 1 through 12 {
+//   .row[class*="#{$num}"] > .col {
+//     width: ((100 / $columns) * $num) * 1%;
+//   }
+// }
+
+
+
+// @for $grid from 1 through 12 {
+//   @for $num from 1 through 12 {
+
+//     @for $gridCol from 1 through $grid {
+//       //@debug $grid;
+//       @if ($grid + nth($gridAsc, $gridCol)) == 12 {
+//         // @debug $grid / nth($gridAsc, $gridCol);
+//       }
+//     }
+//       .row[class*="#{$num}"] > .col:nth-child(#{$grid}) {
+//         width: ((100 / $columns) * $num) * 1%;
+//       }
+
+//       .row[class^="row-xs-#{$num}"] > .col:nth-child(#{$grid}) {
+//         width: ((100 / $columns) * $num) * 1%;
+//       }
+
+//       .row[class$="#{$num}"] > .col:nth-child(#{$grid}) {
+//         width: ((100 / $columns) * $num) * 1%;
+//       }
+
+
+//   }
+// }
+
+// @for $num from 1 through 12 {
+//   .row[class*="#{$num}"] > .col:nth-child(1) {
+//     width: ((100 / $columns) * $num) * 1%;
+//   }
+// }
+
+// @for $num from 1 through 11 {
+//   .row[class*="#{$num}"] > .col:nth-child(2) {
+//     width: ((100 / $columns) * $num) * 1%;
+//   }
+// }
+
+// @for $num from 1 through 10 {
+//   .row[class*="#{$num}"] > .col:nth-child(3) {
+//     width: ((100 / $columns) * $num) * 1%;
+//   }
+// }
+
+// @for $num from 1 through 9 {
+//   .row[class*="#{$num}"] > .col:nth-child(4) {
+//     width: ((100 / $columns) * $num) * 1%;
+//   }
+// }
+
+// @for $a from 1 through 12 {
+//   @for $b from 1 through 12 {
+//     @for $c from 1 through 12 {
+//       @for $d from 1 through 12 {
+//         @for $e from 1 through 12 {
+//           @for $f from 1 through 12 {
+//             @if ($a + $b + $c + $d + $e + $f) == 12 {
+//               @debug $a "/" $b "/" $c "/" $d "/" $e "/" $f
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+/* Changing Susy default global settings */
+$susy: (
+  columns: 12,
+  container: 1180px,
+  gutters: 1/4,
+  global-box-sizing: border-box,
+  debug: (image: show)
+);
+
+$grid: 12 (80px 20px);
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+[class^="row"] > .col {
+    &:first-child {
+      @include first;
+    }
+    &:last-child {
+      @include last;
+    }
+}
+
+.row-xs-2 > .col { @include span(1 of 6); }
+.row-xs-3 > .col { @include span(1 of 4); }
+.row-xs-4 > .col { @include span(1 of 3); }
+.row-xs-6 > .col { @include span(1 of 2); }
+
+$grid-4-2-6: (4 2 6);
+.row-xs-4-2-6 > .col {
+    &:nth-child(1) {
+        @include span(1 at 1 of $grid-4-2-6);
+    }
+    &:nth-child(2) {
+        @include span(1 at 2 of $grid-4-2-6);
+    }
+    &:nth-child(3) {
+        @include span(1 at 3 of $grid-4-2-6);
+    }
+}
