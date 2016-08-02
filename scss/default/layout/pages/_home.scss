@@ -1,0 +1,23 @@
+.branding {
+    [class^="row-"] {
+        max-width: 50rem;
+        .col {
+            font-weight: bold;
+            padding: 5rem 0;
+            text-align: center;
+
+            &:nth-child(1) {
+                background-color: $primary-color;
+                color: $light-color;
+            }
+            &:nth-child(2) {
+                background-color: $secondary-color;
+                color: $dark-color;
+            }
+            &:nth-child(3) {
+                background-color: $tertiary-color;
+                color: $light-color;
+            }
+        }
+    }
+}

@@ -1,13 +1,12 @@
 // 3rd Party Venders
 @import "normalize";
-@import "susy";
-@import "breakpoint";
+@import "bootstrap";
 
 // Helper files
 @import
-  "helpers/variables",
-  "helpers/functions",
-  "helpers/mixins";
+  "utils/variables",
+  "utils/functions",
+  "utils/mixins";
 
 // Add-on Vendors
 @import
@@ -22,17 +21,14 @@
 @import
   "layout/content",
   "layout/nav",
-  "layout/grid",
+  // "layout/grid",
   "layout/header",
   "layout/footer",
-  "layout/sidebar";
+  "layout/sidebar",
+  "layout/pages/home";
 
 // Components are features or widgets that can can be encapsulated
 @import
   "components/buttons",
   "components/elements",
   "components/forms";
-
-// Individual page styles
-@import
-  "pages/home";
