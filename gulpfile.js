@@ -4,6 +4,8 @@ var gulp = require('gulp'),
     bowerNormalizer = require('gulp-bower-normalize')
     livereload = require('gulp-livereload')
     notify = require("gulp-notify")
+    rename = require("gulp-rename")
+    cleanCSS = require("gulp-clean-css")
     postcss = require('gulp-postcss')
     sass = require('gulp-ruby-sass')
     sourcemaps = require('gulp-sourcemaps');
@@ -36,8 +38,7 @@ gulp.task('sass', function() {
                 config.bowerDir + '/normalize-scss/sass',
                 config.bowerDir + '/support-for/sass',
                 config.bowerDir + '/font-awesome/scss',
-                config.bowerDir + '/susy/sass',
-                config.bowerDir + '/breakpoint-sass/stylesheets',
+                config.bowerDir + '/bootstrap/scss',
             ]
    })
     .on("error", notify.onError(function (error) {
@@ -47,6 +48,7 @@ gulp.task('sass', function() {
     .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
     .pipe(bowerNormalizer({bowerJson: './bower.json'}))
     .pipe(sourcemaps.init())
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('assets'))
     .pipe(livereload());

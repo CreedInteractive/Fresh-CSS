@@ -1,6 +1,6 @@
 {
   "name": "support-for",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Allows Sass authors to conditionally add support for specific browser versions.",
   "homepage": "https://github.com/JohnAlbin/support-for",
   "bugs": {
@@ -20,8 +20,9 @@
   ],
   "main": "sass/_support-for.scss",
   "eyeglass": {
-    "exports": "eyeglass-exports.js",
-    "needs": "^0.7.1"
+    "sassDir": "sass",
+    "exports": false,
+    "needs": "*"
   },
   "scripts": {
     "test": "mocha",
@@ -30,8 +31,9 @@
   "license": "GPL-2.0",
   "devDependencies": {
     "chai": "^3.4.1",
-    "eslint": "^1.9.0",
+    "eslint": "^2.6.0",
+    "eyeglass": "^0.8.3",
     "mocha": "^2.3.4",
-    "sassy-test": "^2.0.0"
+    "sassy-test": "^3.0.3"
   }
 }

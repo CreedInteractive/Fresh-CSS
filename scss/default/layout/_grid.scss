@@ -1,10 +1,35 @@
+/*  ==========================
+  GRID STYLES
+========================== */
+
+/* Changing Susy default global settings */
+$susy: (
+  columns: 12,
+  column-width: 80px,
+  container: 1180px,
+  gutters: 20px/80px,
+  global-box-sizing: border-box,
+  debug: (image: show),
+  math: static
+);
+
+/* --->>> Default Styles <<<--- */
+[class^="row"] > .col {
+    &:first-child {
+      @include first;
+    }
+    &:last-child {
+      @include last;
+    }
+}
+
 [class^="row-"],
 [class*="row-"] {
   margin-top: $col-gutter;
   margin-bottom: $col-gutter;
   display: -webkit-flex;
     -webkit-flex-flow: row wrap;
-
+  @include container;
   @include clearfix();
 
   @if ($debug) { // visualizing layout internals
@@ -25,11 +50,46 @@
     text-align: left;
     width: 100%;
     background: #fafafa;
-    border: 1px #e4e4e4 solid;
     border-radius: 5px;
 
     @if ($debug) { // visualizing layout internals
         border: 1px dashed blue;
+    }
+}
+
+// $susy: (
+//   columns: 12,
+//   container: 1180px,
+//   gutters: 20px/80px,
+//
+//   global-box-sizing: border-box
+// );
+
+// $total-columns: 12;
+// $column-width: 60px;
+// $gutter-width: 20px;
+// $grid-padding: 10px;
+
+// $grid: 12 (80px 20px);
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+.row-xs-2 > .col { @include span(1 of 6); }
+.row-xs-3 > .col { @include span(1 of 4); }
+.row-xs-4 > .col { @include span(1 of 3); }
+.row-xs-6 > .col { @include span(1 of 2); }
+
+$grid-4-2-6: (4 2 6);
+.row-xs-4-2-6 > .col {
+    &:nth-child(1) {
+        @include span(1 at 1 of $grid-4-2-6);
+    }
+    &:nth-child(2) {
+        @include span(1 at 2 of $grid-4-2-6);
+    }
+    &:nth-child(3) {
+        @include span(1 at 3 of $grid-4-2-6);
     }
 }
 
@@ -187,45 +247,3 @@
 //     }
 //   }
 // }
-
-
-/* Changing Susy default global settings */
-$susy: (
-  columns: 12,
-  container: 1180px,
-  gutters: 1/4,
-  global-box-sizing: border-box,
-  debug: (image: show)
-);
-
-$grid: 12 (80px 20px);
-
-/* Makes border-box properties */
-@include border-box-sizing;
-
-[class^="row"] > .col {
-    &:first-child {
-      @include first;
-    }
-    &:last-child {
-      @include last;
-    }
-}
-
-.row-xs-2 > .col { @include span(1 of 6); }
-.row-xs-3 > .col { @include span(1 of 4); }
-.row-xs-4 > .col { @include span(1 of 3); }
-.row-xs-6 > .col { @include span(1 of 2); }
-
-$grid-4-2-6: (4 2 6);
-.row-xs-4-2-6 > .col {
-    &:nth-child(1) {
-        @include span(1 at 1 of $grid-4-2-6);
-    }
-    &:nth-child(2) {
-        @include span(1 at 2 of $grid-4-2-6);
-    }
-    &:nth-child(3) {
-        @include span(1 at 3 of $grid-4-2-6);
-    }
-}

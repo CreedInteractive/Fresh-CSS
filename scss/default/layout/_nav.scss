@@ -10,9 +10,10 @@ nav, .navigation {
   left: 0;
   bottom: 0;
   width: 250px;
+  overflow-y: scroll;
   z-index: 5;
 
-  /* base styles for ul, li */
+  /* --->>> Base styles for ul, li <<<--- */
   ul {
     margin: 0;
     padding: 0;
@@ -23,17 +24,16 @@ nav, .navigation {
       list-style: none;
     }
   }
-  
-  /* level styles */
+
+  /* --->>> Logo <<<--- */
+  .logo {
+      max-width: 150px;
+      margin: 2rem auto;
+  }
+
+  /* --->>> Level Styles <<<--- */
   > ul {
     > li {
-      span {
-        background: $primary-color;
-        display: block;
-        line-height: 3.6rem;
-        padding: 0 2rem;
-        text-transform: uppercase;
-      }
       > ul {
         > li {
           line-height: 1.6rem;
@@ -51,5 +51,27 @@ nav, .navigation {
         }
       }
     }
+  }
+  label {
+    cursor: pointer;
+    background: $primary-color;
+    display: block;
+    line-height: 3.6rem;
+    padding: 0 2rem;
+    text-transform: uppercase;
+  }
+  li input[type="checkbox"] {
+      position: absolute;
+      left: -1000px;
+      top: -1000px;
+  }
+  input ~ ul {
+      transition: all .5s ease;
+      max-height: 0;
+      overflow: hidden;
+  }
+  input:checked ~ ul {
+      height: auto;
+      max-height: 100%;
   }
 }
