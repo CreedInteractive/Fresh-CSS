@@ -1,4 +1,4 @@
-<nav class="navigation">
+<nav class="style-nav col-sm-1">
     <div class="logo">
         <img src="assets/images/creed_logo@2x.png" alt="Creed Base" />
     </div>
