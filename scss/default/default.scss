@@ -1,0 +1,34 @@
+// 3rd Party Venders
+@import "normalize";
+@import "bootstrap";
+
+// Helper files
+@import
+  "utils/variables",
+  "utils/functions",
+  "utils/mixins";
+
+// Add-on Vendors
+@import
+  "vendors/include_media";
+
+// Default CSS styles
+@import
+  "base/settings",
+  "base/typography";
+
+// Layout styles
+@import
+  "layout/content",
+  "layout/nav",
+  // "layout/grid",
+  "layout/header",
+  "layout/footer",
+  "layout/sidebar",
+  "layout/pages/home";
+
+// Components are features or widgets that can can be encapsulated
+@import
+  "components/buttons",
+  "components/elements",
+  "components/forms";

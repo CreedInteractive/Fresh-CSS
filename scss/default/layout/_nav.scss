@@ -1,0 +1,77 @@
+/*  ==========================
+      NAVIGATION
+    ========================== */
+nav, .navigation {
+  background: #f8f8f8;
+  border-right: 1px solid #ececec;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  overflow-y: scroll;
+  z-index: 5;
+
+  /* --->>> Base styles for ul, li <<<--- */
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  /* --->>> Logo <<<--- */
+  .logo {
+      max-width: 150px;
+      margin: 2rem auto;
+  }
+
+  /* --->>> Level Styles <<<--- */
+  > ul {
+    > li {
+      > ul {
+        > li {
+          line-height: 1.6rem;
+          a {
+            background: #f8f8f8;
+            color: $primary-color;
+            display: block;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            &:hover {
+              background: darken(#f8f8f8, 10%);
+              color: lighten($primary-color, 50%);
+            }
+          }
+        }
+      }
+    }
+  }
+  label {
+    cursor: pointer;
+    background: $primary-color;
+    display: block;
+    line-height: 3.6rem;
+    padding: 0 2rem;
+    text-transform: uppercase;
+  }
+  li input[type="checkbox"] {
+      position: absolute;
+      left: -1000px;
+      top: -1000px;
+  }
+  input ~ ul {
+      transition: all .5s ease;
+      max-height: 0;
+      overflow: hidden;
+  }
+  input:checked ~ ul {
+      height: auto;
+      max-height: 100%;
+  }
+}

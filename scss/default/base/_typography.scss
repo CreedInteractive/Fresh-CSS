@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,300);
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../../fonts/ProximaNova-Xbold-webfont.eot');
+    src: url('../fonts/ProximaNova-Xbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Xbold-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Xbold-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Xbold-webfont.svg#proxima_nova_thextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Reg-webfont.eot');
+    src: url('../fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Reg-webfont.woff') format('woff'),
+         url('../fonts/ProximaNova-Reg-webfont.ttf') format('truetype'),
+         url('../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
