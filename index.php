@@ -1,7 +1,7 @@
 <?php include 'public/_inc/_header.inc.php'; ?>
 <?php include 'public/_inc/_nav.inc.php'; ?>
 
-    <main class="main">
+    <main class="main col-xs-12 col-sm-11">
         <section class="intro">
             <h1>Getting Started</h1>
             <p>This is a style guide for visual representation only.</p>
