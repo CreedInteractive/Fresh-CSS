@@ -2,16 +2,9 @@
       NAVIGATION
     ========================== */
 nav.style-nav {
-  background: #f8f8f8;
-  border-right: 1px solid #ececec;
+  background: $secondary-color;
   height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 250px;
   overflow-y: scroll;
-  z-index: 5;
 
   /* --->>> Base styles for ul, li <<<--- */
   ul {
@@ -29,6 +22,10 @@ nav.style-nav {
   .logo {
       max-width: 150px;
       margin: 2rem auto;
+      width: 70%;
+      img {
+          margin: auto;
+      }
   }
 
   /* --->>> Level Styles <<<--- */
@@ -38,13 +35,13 @@ nav.style-nav {
         > li {
           line-height: 1.6rem;
           a {
-            background: #f8f8f8;
+            background: $tertiary-color;
             color: $primary-color;
             display: block;
             padding: 1rem 2rem;
             text-decoration: none;
             &:hover {
-              background: darken(#f8f8f8, 10%);
+              background: darken($tertiary-color, 10%);
               color: lighten($primary-color, 50%);
             }
           }
@@ -71,7 +68,7 @@ nav.style-nav {
       overflow: hidden;
   }
   input:checked ~ ul {
-      height: auto;
+      height: 100vh;
       max-height: 100%;
   }
 }

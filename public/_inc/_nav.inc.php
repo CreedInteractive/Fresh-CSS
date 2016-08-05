@@ -1,6 +1,6 @@
 <nav class="style-nav col-sm-1">
     <div class="logo">
-        <img src="assets/images/creed_logo@2x.png" alt="Creed Base" />
+        <img src="assets/images/abms.svg" alt="AMBS" />
     </div>
 
     <ul>
