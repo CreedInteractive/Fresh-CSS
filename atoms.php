@@ -14,6 +14,8 @@
         <?php include 'public/_inc/atoms/_headings.inc.php'; ?>
         <?php include 'public/_inc/atoms/_paragraphs.inc.php'; ?>
         <?php include 'public/_inc/atoms/_lists.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_text-elements.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_blockquote.inc.php'; ?>
 
     </main>
 
