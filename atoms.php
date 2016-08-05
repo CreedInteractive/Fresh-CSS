@@ -16,6 +16,10 @@
         <?php include 'public/_inc/atoms/_lists.inc.php'; ?>
         <?php include 'public/_inc/atoms/_text-elements.inc.php'; ?>
         <?php include 'public/_inc/atoms/_blockquote.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_buttons.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_tabular-data.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_images.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_alerts.inc.php'; ?>
 
     </main>
 
