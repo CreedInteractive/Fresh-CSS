@@ -9,6 +9,11 @@
 
         <?php include 'public/_inc/atoms/_grid.inc.php'; ?>
         <?php include 'public/_inc/atoms/_color-scheme.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_font-stacks.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_panels.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_headings.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_paragraphs.inc.php'; ?>
+        <?php include 'public/_inc/atoms/_lists.inc.php'; ?>
 
     </main>
 
