@@ -1,6 +1,5 @@
-div.sg-color {
-    font-size: 50px;
-    .sg-color--a {
+.sg-color {
+    &.sg-color--a {
         .sg-color-swatch {
         background: #0075bc
         }
