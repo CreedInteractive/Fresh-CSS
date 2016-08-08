@@ -8,47 +8,48 @@ nav.style-nav {
     text-align: center;
     height: 100vh;
     overflow: visible;
-    label {
-        background: none;
-        color: #b7bbc7;
-        line-height: 1.5rem;
-        padding: 2rem 1rem;
-        overflow: hidden;
-        &:hover {
-            background: #000;
-            color: #fff;
+    position: fixed;
+    z-index: 10;
+    li {
+        a {
+            background: none;
+            color: #b7bbc7;
+            display: block;
+            line-height: 1.5rem;
+            padding: 2rem 1rem;
+            overflow: hidden;
+            text-decoration: none;
+            animation: first-animation 2s infinite, another-animation 1s;
             &:before {
-                color: $primary-color;
+                content: "\2022";
+                display: block;
+                font-size: 14rem;
+                height: 50px;
             }
         }
-        &:before {
-            content: "•";
-            display: block;
-            font-size: 14rem;
-            height: 50px;
+        &:hover {
+            a {
+                background: #000;
+                color: #fff;
+                &:before {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    li:hover {
+        ul {
+            left: 100%;
         }
     }
     ul {
         ul {
-            display: none;
             position: absolute;
             top: 0;
-            left: 88px;
+            left: -9999px;
             z-index: 10;
             height: 100vh;
             background: #000;
-        }
-    }
-    input:checked {
-        ~ label {
-            background: #000;
-            color: #fff;
-            &:before {
-                color: $primary-color;
-            }
-        }
-        ~ ul {
-            display: block;
         }
     }
 }

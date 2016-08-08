@@ -1,0 +1,68 @@
+/* -------------------------------------------------------------------------
+ Prettyprint
+---------------------------------------------------------------------------- */
+.source-code {
+    border-top: #e0e0e0 1px solid;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+.prettyprint {
+    background: #333;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    overflow-x: scroll;
+    padding: 0 .3em;
+    margin-top: 1rem;
+    max-height: 0;
+    transition: all 0.6s ease;
+    &.active {
+        padding: .5em .3em;
+        max-height: 2500px;
+    }
+}
+
+.pln { color: #fff } /* plain text */
+
+@media screen {
+	.str,
+	.string {color: #E6DB74;} /* string content */
+
+	.kwd,
+	.keyword {color: #66D9EF;} /* a keyword */
+
+	.com,
+	.comment {color: #75715E;} /* a comment */
+
+	.typ {color: #A6E22E;} /* a type name */
+
+	.lit,
+	.number {color: #AE81FF;} /* a literal value */
+
+	/* punctuation, lisp open bracket, lisp close bracket */
+	/* .pun, .opn, .clo { color: #660 } */
+
+	.tag {color: #F92672; font-size: inherit; padding: .25em 0em;} /* a markup tag name */
+
+	.atn {color: #A6E22E;} /* a markup attribute name */
+
+	.atv {color: #E6DB74;} /* a markup attribute value */
+
+	/*.dec, .var { color: #606 }*/ /* a declaration; a variable name */
+
+	.fun {color: #FF0000;} /* a function name */
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+	border-left:1px solid #444;
+	margin: 0 0 0 3.3em; /* IE indents via margin-left */
+	padding: 0;
+}
+
+ol.linenums li {
+	color: #bebec5;
+	line-height: 1.5;
+	padding-left: .8em;
+}

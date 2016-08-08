@@ -10,11 +10,13 @@
 
 // Add-on Vendors
 @import
-  "vendors/include_media";
+  "vendors/include_media",
+  "vendors/google_pretty_print";
 
 // Default CSS styles
 @import
   "base/settings",
+  "base/branding",
   "base/typography";
 
 // Layout styles
