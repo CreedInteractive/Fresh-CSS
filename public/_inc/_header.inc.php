@@ -10,6 +10,5 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="assets/css/main.css">
-
     </head>
-    <body>
+    <body onload="prettyPrint();">

@@ -1,0 +1,11 @@
+#grid {
+    [class^="col"],
+    [class*="col"] {
+        p {
+            border-radius: 3px;
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}
