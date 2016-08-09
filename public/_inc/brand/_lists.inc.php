@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div>
 	<div class="row">
-		<div class="col-4">
+		<div class="col-xs-12 col-sm-4">
 			<h3>Unordered Lists</h3>
 			<ul>
 				<li>list item 1</li>
@@ -22,7 +22,7 @@
 			</ul>
 		</div>
 
-		<div class="col-4">
+		<div class="col-xs-12 col-sm-4">
 			<h3>Ordered Lists</h3>
 			<ol>
 				<li>list item 1</li>
@@ -44,7 +44,7 @@
 			</ol>
 		</div>
 
-		<div class="col-4">
+		<div class="col-xs-12 col-sm-4">
 			<h3>Definition Lists</h3>
 			<dl>
 				<dt>Term</dt>

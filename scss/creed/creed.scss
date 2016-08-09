@@ -1,3 +1,8 @@
+// Base Styles
+@import
+  "base/custom",
+  "base/branding";
+  
 // Layout styles
 @import
   "layout/nav",
@@ -14,10 +19,6 @@
   "components/forms",
   "components/colors";
 
-// Base Styles
-@import
-  "base/custom",
-  "base/branding";
 // Typography
 @import
   "base/typography"

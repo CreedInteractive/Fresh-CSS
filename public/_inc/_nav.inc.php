@@ -16,13 +16,14 @@
                 <ul>
                     <li><a href="index#colors">Colors</a></li>
                     <li><a href="index#typography">Typography</a></li>
+                    <li><a href="index#icons">Icons</a></li>
                     <li><a href="index#headings">Headings</a></li>
                     <li><a href="index#paragraphs">Paragraphs</a></li>
                     <li><a href="index#lists">Lists</a></li>
                 </ul>
             </li>
             <li>
-                <label for="atoms">Atoms (Base)</label>
+                <label for="atoms">components</label>
                 <input type="checkbox" id="atoms">
                 <ul>
                     <li><a href="atoms#grid">Grid</a></li>

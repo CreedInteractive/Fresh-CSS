@@ -18,21 +18,32 @@ h2 {
   color: $primary-color;
   font-size: 3.6rem;
   font-family: 'Proxima Nova Bold', sans-serif;
-  padding: 1rem 0rem 1rem 0rem;
 }
 h3 {
   font-size: 3.0rem;
   color: $secondary-color;
-  padding: 1rem 0rem 1rem 0rem;
 }
 h5 {
   font-size: 1.8rem;
   font-family: 'Proxima Nova Bold', sans-serif;
   color: $secondary-color;
 }
-
 h1, h2 {
   text-transform: uppercase;
+}
+h1, h2, h3, h4, h5 {
+    margin-bottom: 1.5rem;
+}
+
+main, .main {
+  padding: 2rem;
+  @include media("<sm") {
+      margin-top: 6rem;
+  }
+}
+
+section {
+    margin-bottom: 3rem;
 }
 
 img {

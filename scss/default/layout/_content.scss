@@ -6,14 +6,3 @@
   margin: auto;
   width: 960px;
 }
-
-main, .main {
-  padding: 0 2rem;
-  @include media("<sm") {
-      margin-top: 60px;
-  }
-}
-
-section {
-    margin-bottom: 3rem;
-}

@@ -20,10 +20,11 @@ nav.style-nav {
 
   /* --->>> Logo <<<--- */
   .logo {
+      background: $primary-color;
       max-width: 150px;
       margin: 0 auto;
       padding: 2rem 0;
-      width: 70%;
+      width: 100%;
       @include media("<sm") {
           max-width: 100%;
           padding: 1rem 0;
@@ -50,10 +51,14 @@ nav.style-nav {
       }
   }
   .mobile-menu-label {
+    display: none;
     background: none;
     position: absolute;
     top: 10px;
     right: 0;
+    @include media("<sm") {
+        display: inline-block;
+    }
     &:hover {
         cursor: pointer;
     }

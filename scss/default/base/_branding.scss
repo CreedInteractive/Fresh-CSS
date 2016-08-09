@@ -9,6 +9,9 @@ $quaternary-color: #27292f;
 #colors {
     color: #fff;
     [class^="color--"] {
+        @include media("<sm") {
+            padding-bottom: 2rem;
+        }
         .swatch {
             border-radius: 3px;
             display: inline-block;

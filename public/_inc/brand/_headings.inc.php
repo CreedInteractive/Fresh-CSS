@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div>
     <h1>Heading 1 with a <a href="#">link</a></h1>
     <h2>Heading 2 with a <a href="#">link</a></h2>
     <h3>Heading 3 with a <a href="#">link</a></h3>

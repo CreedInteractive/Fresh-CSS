@@ -3,11 +3,8 @@
 @import "bootstrap";
 @import "font-awesome";
 
-// Helper files
 @import
-  "utils/variables",
-  "utils/functions",
-  "utils/mixins";
+  "base/settings";
 
 // Add-on Vendors
 @import
@@ -16,9 +13,14 @@
 
 // Default CSS styles
 @import
-  "base/settings",
   "base/branding",
   "base/typography";
+
+  // Helper files
+  @import
+    "utils/variables",
+    "utils/functions",
+    "utils/mixins";
 
 // Layout styles
 @import
@@ -35,4 +37,5 @@
 @import
   "components/buttons",
   "components/elements",
+  "components/icons",
   "components/forms";
