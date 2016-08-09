@@ -10,46 +10,67 @@ nav.style-nav {
     overflow: visible;
     position: fixed;
     z-index: 10;
-    li {
-        a {
-            background: none;
-            color: #b7bbc7;
-            display: block;
-            line-height: 1.5rem;
-            padding: 2rem 1rem;
-            overflow: hidden;
-            text-decoration: none;
-            animation: first-animation 2s infinite, another-animation 1s;
-            &:before {
-                content: "\2022";
-                display: block;
-                font-size: 14rem;
-                height: 50px;
-            }
-        }
-        &:hover {
+    ul {
+        height: 100vh;
+        background: #15171a;
+        li {
             a {
-                background: #000;
-                color: #fff;
+                background: none;
+                color: #b7bbc7;
+                display: block;
+                line-height: 1.5rem;
+                padding: 2rem 1rem;
+                overflow: hidden;
+                text-decoration: none;
                 &:before {
-                    color: $primary-color;
+                    content: "\2022";
+                    display: block;
+                    font-size: 14rem;
+                    height: 50px;
+                }
+            }
+            &:hover {
+                > a {
+                    background: #000;
+                    color: #fff;
+                    &:before {
+                        color: $primary-color;
+                    }
                 }
             }
         }
-    }
-    li:hover {
-        ul {
-            left: 100%;
+        li:hover {
+            ul {
+                left: 100%;
+            }
         }
-    }
-    ul {
+
+        /* --->>> Sub Menu <<<--- */
         ul {
             position: absolute;
             top: 0;
-            left: -9999px;
-            z-index: 10;
+            left: -130%;
+            transition: .6s ease all;
+            z-index: -10;
             height: 100vh;
             background: #000;
         }
+    }
+    /* --->>> Level Styles <<<--- */
+    > ul {
+      > li {
+        > ul {
+          > li {
+            a {
+              background: #000;
+              color: #b7bbc7;
+              &:hover {
+                  background: transparent;
+                  color: #fff;
+              }
+            }
+          }
+        }
+      }
     }
 }

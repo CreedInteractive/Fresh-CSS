@@ -6,12 +6,12 @@
             <h1>Brand Guidelines</h1>
             <p>Client brand guidelines for colors, fonts, etc.</p>
 
-            <section id="color-scheme">
+            <section id="colors">
                 <h2>Primary Colors</h2>
                 <?php include 'public/_inc/brand/_color-scheme.inc.php'; ?>
             </section>
 
-            <section id="font-stacks">
+            <section id="typography">
                 <h2>Typography</h2>
                 <?php include 'public/_inc/brand/_font-stacks.inc.php'; ?>
                 <div class="source-code">
@@ -20,10 +20,32 @@
                 </div>
             </section>
 
-            <?php include 'public/_inc/atoms/_headings.inc.php'; ?>
-            <?php include 'public/_inc/atoms/_paragraphs.inc.php'; ?>
-            <?php include 'public/_inc/atoms/_lists.inc.php'; ?>
-            <?php include 'public/_inc/atoms/_text-elements.inc.php'; ?>
+            <section id="headings">
+                <h2>Headings</h2>
+                <?php include 'public/_inc/brand/_headings.inc.php'; ?>
+                <div class="source-code">
+                    <a class="btn btn-primary" href="#">View Source</a>
+                    <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/brand/_headings.inc.php')); ?></pre>
+                </div>
+            </section>
+
+            <section id="paragraphs">
+                <h2>Paragraphs</h2>
+                <?php include 'public/_inc/brand/_paragraphs.inc.php'; ?>
+                <div class="source-code">
+                    <a class="btn btn-primary" href="#">View Source</a>
+                    <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/brand/_paragraphs.inc.php')); ?></pre>
+                </div>
+            </section>
+
+            <section id="lists">
+                <h2>Lists</h2>
+                <?php include 'public/_inc/brand/_lists.inc.php'; ?>
+                <div class="source-code">
+                    <a class="btn btn-primary" href="#">View Source</a>
+                    <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/brand/_lists.inc.php')); ?></pre>
+                </div>
+            </section>
 
         </div>
     </main>
