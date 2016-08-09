@@ -1,3 +1,3 @@
-
-    <p class="sg-font sg-font-primary">“ubuntu”, “HelveticaNeue”, “Helvetica”, Arial, sans-serif;<br>
-	<span class="serif">“bitter”, Georgia, Times, “Times New Roman”, serif;</span></p>
+<p class="latoregular">"latoregular", Helvetica, Arial, sans-serif;</p>
+<p class="latobold">"latobold", Helvetica, Arial, sans-serif;</p>
+<p class="playfair_displaybold">"playfair_displaybold", Georgia, Times New Roman, serif;</p>
