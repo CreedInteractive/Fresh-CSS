@@ -8,47 +8,69 @@ nav.style-nav {
     text-align: center;
     height: 100vh;
     overflow: visible;
-    label {
-        background: none;
-        color: #b7bbc7;
-        line-height: 1.5rem;
-        padding: 2rem 1rem;
-        overflow: hidden;
-        &:hover {
-            background: #000;
-            color: #fff;
-            &:before {
-                color: $primary-color;
+    position: fixed;
+    z-index: 10;
+    ul {
+        height: 100vh;
+        background: #15171a;
+        li {
+            a {
+                background: none;
+                color: #b7bbc7;
+                display: block;
+                line-height: 1.5rem;
+                padding: 2rem 1rem;
+                overflow: hidden;
+                text-decoration: none;
+                &:before {
+                    content: "\2022";
+                    display: block;
+                    font-size: 14rem;
+                    height: 50px;
+                }
+            }
+            &:hover {
+                > a {
+                    background: #000;
+                    color: #fff;
+                    &:before {
+                        color: $primary-color;
+                    }
+                }
             }
         }
-        &:before {
-            content: "•";
-            display: block;
-            font-size: 14rem;
-            height: 50px;
+        li:hover {
+            ul {
+                left: 100%;
+            }
         }
-    }
-    ul {
+
+        /* --->>> Sub Menu <<<--- */
         ul {
-            display: none;
             position: absolute;
             top: 0;
-            left: 88px;
-            z-index: 10;
+            left: -130%;
+            transition: .6s ease all;
+            z-index: -10;
             height: 100vh;
             background: #000;
         }
     }
-    input:checked {
-        ~ label {
-            background: #000;
-            color: #fff;
-            &:before {
-                color: $primary-color;
+    /* --->>> Level Styles <<<--- */
+    > ul {
+      > li {
+        > ul {
+          > li {
+            a {
+              background: #000;
+              color: #b7bbc7;
+              &:hover {
+                  background: transparent;
+                  color: #fff;
+              }
             }
+          }
         }
-        ~ ul {
-            display: block;
-        }
+      }
     }
 }

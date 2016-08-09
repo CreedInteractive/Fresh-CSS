@@ -10,11 +10,13 @@
 
 // Add-on Vendors
 @import
-  "vendors/include_media";
+  "vendors/include_media",
+  "vendors/google_pretty_print";
 
 // Default CSS styles
 @import
   "base/settings",
+  "base/branding",
   "base/typography";
 
 // Layout styles
@@ -25,7 +27,8 @@
   "layout/header",
   "layout/footer",
   "layout/sidebar",
-  "layout/pages/home";
+  "layout/pages/home",
+  "layout/pages/atoms";
 
 // Components are features or widgets that can can be encapsulated
 @import

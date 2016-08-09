@@ -1,0 +1,44 @@
+/*  ==========================
+      BRANDING
+    ========================== */
+$primary-color: #0075bc;
+$secondary-color: #15171a;
+$tertiary-color: #707480;
+$quaternary-color: #27292f;
+
+#colors {
+    color: #fff;
+    [class^="color--"] {
+        .swatch {
+            border-radius: 3px;
+            display: inline-block;
+            min-height: 100px;
+            text-align: center;
+            width: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .color--a {
+        .swatch {
+            background: $primary-color;
+        }
+    }
+    .color--b {
+        .swatch {
+            background: $secondary-color;
+        }
+    }
+    .color--c {
+        .swatch {
+            background: $tertiary-color;
+        }
+    }
+    .color--d {
+        .swatch {
+            background: $quaternary-color;
+        }
+    }
+}
