@@ -19,6 +19,9 @@ $quaternary-color: #27292f;
             display: flex;
             align-items: center;
             justify-content: center;
+            @include media("<md") {
+                width: 100%;
+            }
         }
     }
     .color--a {

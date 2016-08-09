@@ -15,7 +15,7 @@
                 <h2>Typography</h2>
                 <?php include 'public/_inc/brand/_font-stacks.inc.php'; ?>
                 <div class="source-code">
-                    <a class="btn btn-primary" href="#">View Source</a>
+                    <a class="btn btn-secondary" href="#">View Source</a>
                     <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/brand/_font-stacks.inc.php')); ?></pre>
                 </div>
             </section>
@@ -24,7 +24,7 @@
                 <h2>Headings</h2>
                 <?php include 'public/_inc/brand/_headings.inc.php'; ?>
                 <div class="source-code">
-                    <a class="btn btn-primary" href="#">View Source</a>
+                    <a class="btn btn-secondary" href="#">View Source</a>
                     <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/brand/_headings.inc.php')); ?></pre>
                 </div>
             </section>
@@ -33,7 +33,7 @@
                 <h2>Paragraphs</h2>
                 <?php include 'public/_inc/brand/_paragraphs.inc.php'; ?>
                 <div class="source-code">
-                    <a class="btn btn-primary" href="#">View Source</a>
+                    <a class="btn btn-secondary" href="#">View Source</a>
                     <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/brand/_paragraphs.inc.php')); ?></pre>
                 </div>
             </section>
@@ -42,7 +42,7 @@
                 <h2>Lists</h2>
                 <?php include 'public/_inc/brand/_lists.inc.php'; ?>
                 <div class="source-code">
-                    <a class="btn btn-primary" href="#">View Source</a>
+                    <a class="btn btn-secondary" href="#">View Source</a>
                     <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/brand/_lists.inc.php')); ?></pre>
                 </div>
             </section>

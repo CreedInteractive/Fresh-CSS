@@ -9,6 +9,9 @@
 
 main, .main {
   padding: 0 2rem;
+  @include media("<sm") {
+      margin-top: 60px;
+  }
 }
 
 section {

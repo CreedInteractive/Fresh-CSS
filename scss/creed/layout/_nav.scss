@@ -10,11 +10,26 @@ nav.style-nav {
     overflow: visible;
     position: fixed;
     z-index: 10;
+    @include media("<sm") {
+        height: 50px;
+        font-size: 1.4rem;
+    }
     ul {
         height: 100vh;
         background: #15171a;
+        @include media("<sm") {
+            height: auto;
+        }
+        .nav-items {
+            overflow: hidden;
+            max-height: 1000px;
+            transition: .5s ease all;
+            @include media("<sm") {
+                max-height: 0;
+            }
+        }
         li {
-            a {
+            a, label {
                 background: none;
                 color: #b7bbc7;
                 display: block;
@@ -27,23 +42,29 @@ nav.style-nav {
                     display: block;
                     font-size: 14rem;
                     height: 50px;
+                    @include media("<sm") {
+                        display: none;
+                    }
                 }
             }
             &:hover {
-                > a {
+                > a, > label {
                     background: #000;
                     color: #fff;
                     &:before {
                         color: $primary-color;
                     }
                 }
+                /* --->>> Sub Menu Slide In <<<--- */
+                ul {
+                    left: 100%;
+                    @include media("<sm") {
+                        left: 0;
+                    }
+                }
             }
         }
-        li:hover {
-            ul {
-                left: 100%;
-            }
-        }
+
 
         /* --->>> Sub Menu <<<--- */
         ul {
@@ -54,6 +75,15 @@ nav.style-nav {
             z-index: -10;
             height: 100vh;
             background: #000;
+            @include media("<sm") {
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                max-height: 0;
+                height: auto;
+                transition: .5s ease all;
+            }
         }
     }
     /* --->>> Level Styles <<<--- */

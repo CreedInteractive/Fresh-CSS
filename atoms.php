@@ -15,7 +15,7 @@
             <?php include 'public/_inc/atoms/_grid.inc.php'; ?>
 
             <div class="source-code">
-                <a class="btn btn-primary" href="#">View Source</a>
+                <a class="btn btn-secondary" href="#">View Source</a>
                 <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/atoms/_grid.inc.php')); ?></pre>
             </div>
         </section>
@@ -24,10 +24,20 @@
             <h2>Buttons</h2>
             <?php include 'public/_inc/atoms/_buttons.inc.php'; ?>
             <div class="source-code">
-                <a class="btn btn-primary" href="#">View Source</a>
+                <a class="btn btn-secondary" href="#">View Source</a>
                 <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/atoms/_buttons.inc.php')); ?></pre>
             </div>
         </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <?php include 'public/_inc/atoms/_forms.inc.php'; ?>
+            <div class="source-code">
+                <a class="btn btn-secondary" href="#">View Source</a>
+                <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/atoms/_forms.inc.php')); ?></pre>
+            </div>
+        </section>
+
     </main>
 
 <?php include 'public/_inc/_footer.inc.php'; ?>

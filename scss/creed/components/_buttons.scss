@@ -1,17 +1,5 @@
 .btn {
     font-size: 1.8rem;
-    &.btn-primary {
-        background: transparent;
-        border: 1px $primary-color solid;
-        border-radius: 20px;
-        color: $primary-color;
-        padding: 1rem 2.5rem;
-        transition: .3s all ease;
-        &:hover {
-            background: $primary-color;
-            color: #fff;
-        }
-    }
     &.btn-default {
         background: transparent;
         border: 1px $tertiary-color solid;
@@ -24,6 +12,31 @@
             color: #fff;
         }
     }
+    &.btn-primary {
+        background: transparent;
+        border: 1px $primary-color solid;
+        border-radius: 20px;
+        color: $primary-color;
+        padding: 1rem 2.5rem;
+        transition: .3s all ease;
+        &:hover {
+            background: $primary-color;
+            color: #fff;
+        }
+    }
+    &.btn-secondary {
+        background: $primary-color;
+        border: 1px $primary-color solid;
+        border-radius: 20px;
+        color: #fff;
+        padding: 1rem 2.5rem;
+        transition: .3s all ease;
+        &:hover {
+            background: transparent;
+            color: $primary-color;
+        }
+    }
+
     &.btn-lg {
         font-size: 2.4rem;
         border-radius: 25px;
