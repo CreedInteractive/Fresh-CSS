@@ -29,6 +29,7 @@
                     <li><a href="atoms#grid">Grid</a></li>
                     <li><a href="atoms#buttons">Buttons</a></li>
                     <li><a href="atoms#forms">Forms</a></li>
+                    <li><a href="atoms#progressbar">Progress Bar</a></li>
                 </ul>
             </li>
         </div>

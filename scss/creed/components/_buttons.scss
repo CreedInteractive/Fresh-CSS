@@ -2,7 +2,7 @@
     font-size: 1.8rem;
     &.btn-default {
         background: transparent;
-        border: 1px $tertiary-color solid;
+        border: 2px $tertiary-color solid;
         border-radius: 20px;
         color: $tertiary-color;
         padding: 1rem 2.5rem;
@@ -14,7 +14,7 @@
     }
     &.btn-primary {
         background: transparent;
-        border: 1px $primary-color solid;
+        border: 2px $primary-color solid;
         border-radius: 20px;
         color: $primary-color;
         padding: 1rem 2.5rem;
@@ -26,7 +26,7 @@
     }
     &.btn-secondary {
         background: $primary-color;
-        border: 1px $primary-color solid;
+        border: 2px $primary-color solid;
         border-radius: 20px;
         color: #fff;
         padding: 1rem 2.5rem;
@@ -38,7 +38,7 @@
     }
     &.btn-success {
         background: #82c341;
-        border: 1px #82c341 solid;
+        border: 2px #82c341 solid;
         border-radius: 20px;
         color: #fff;
         padding: 1rem 2.5rem;

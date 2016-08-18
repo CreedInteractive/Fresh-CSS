@@ -1,0 +1,34 @@
+/*  ==========================
+      PROGRES BAR
+    ========================== */
+#progressbar {
+    .subscore {
+        background: #f4f4f4;
+        padding-top: 10px;
+    }
+    .progress {
+        border-radius: 5px;
+        height: 10px;
+        width: 100%;
+        overflow: hidden;
+        &.progress--score {
+            background: #f0f0f0;
+        }
+        &.progress--subscore {
+            background: #fff;
+        }
+        [class*="progress__"] {
+            height: 100%;
+            width: 100%;
+        }
+        .progress__green {
+            background: #82c341;
+        }
+        .progress__yellow {
+            background: #ffba00;
+        }
+        .progress__red {
+            background: #e40040;
+        }
+    }
+}

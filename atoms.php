@@ -38,6 +38,15 @@
             </div>
         </section>
 
+        <section id="forms">
+            <h2 class="leading">Progress Bar</h2>
+            <?php include 'public/_inc/atoms/_progressbar.inc.php'; ?>
+            <div class="source-code">
+                <a class="btn btn-secondary" href="#">View Source</a>
+                <pre class="prettyprint lang-html linenums"><?php echo htmlspecialchars(file_get_contents('public/_inc/atoms/_progressbar.inc.php')); ?></pre>
+            </div>
+        </section>
+
     </main>
 
 <?php include 'public/_inc/_footer.inc.php'; ?>
