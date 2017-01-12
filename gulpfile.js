@@ -48,7 +48,6 @@ gulp.task('sass', function() {
     .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
     .pipe(bowerNormalizer({bowerJson: './bower.json'}))
     .pipe(sourcemaps.init())
-    .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('assets'))
     .pipe(livereload());

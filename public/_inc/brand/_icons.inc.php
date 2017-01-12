@@ -170,4 +170,23 @@
 
     <span class="icon-icon-remove-delete"></span>
 
+    <span class="icon-icon-quit"></span>
+    <span class="icon-icon-mobile"></span>
+
+    <span class="icon-icon-add-a-card">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+    </span>
+
+    <span class="icon-admin-dash-bargraph">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
+    </span>
+
+    <span class="icon-admin-dash-linegraph">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+    </span>
+
+    <span class="icon-admin-dash-spreadsheet">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+    </span>
+
 </div>

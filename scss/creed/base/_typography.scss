@@ -120,13 +120,20 @@
     font-family: "playfair_displaybold", Georgia, Times New Roman, serif;
 }
 /* --->>> Icon Fonts <<<--- */
+.icon-fonts {
+    font-size: 4rem;
+    p {
+        font-family: latoregular,sans-serif;
+    }
+}
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?48jmmo');
-  src:  url('../fonts/icomoon.eot?48jmmo#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?48jmmo') format('truetype'),
-    url('../fonts/icomoon.woff?48jmmo') format('woff'),
-    url('../fonts/icomoon.svg?48jmmo#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?sg2r95');
+  src:  url('../fonts/icomoon.eot?sg2r95#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?sg2r95') format('truetype'),
+    url('../fonts/icomoon.woff?sg2r95') format('woff'),
+    url('../fonts/icomoon.svg?sg2r95#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -140,23 +147,110 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  display: inline-block;
-  list-style: none;
-  text-align: left;
-  padding: .5rem;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-fonts {
-    font-size: 4rem;
-    p {
-        font-family: latoregular,sans-serif;
-    }
+.icon-admin-dash-bargraph .path1:before {
+  content: "\e97e";
+  color: rgb(229, 229, 229);
 }
-
+.icon-admin-dash-bargraph .path2:before {
+  content: "\e97f";
+  margin-left: -1.9521484375em;
+  color: rgb(229, 229, 229);
+}
+.icon-admin-dash-bargraph .path3:before {
+  content: "\e980";
+  margin-left: -1.9521484375em;
+  color: rgb(229, 229, 229);
+}
+.icon-admin-dash-bargraph .path4:before {
+  content: "\e981";
+  margin-left: -1.9521484375em;
+  color: rgb(229, 229, 229);
+}
+.icon-admin-dash-bargraph .path5:before {
+  content: "\e982";
+  margin-left: -1.9521484375em;
+  color: rgb(228, 0, 64);
+}
+.icon-admin-dash-bargraph .path6:before {
+  content: "\e983";
+  margin-left: -1.9521484375em;
+  color: rgb(255, 186, 1);
+}
+.icon-admin-dash-bargraph .path7:before {
+  content: "\e984";
+  margin-left: -1.9521484375em;
+  color: rgb(130, 195, 65);
+}
+.icon-admin-dash-linegraph .path1:before {
+  content: "\e985";
+  color: rgb(229, 229, 229);
+}
+.icon-admin-dash-linegraph .path2:before {
+  content: "\e986";
+  margin-left: -1.9521484375em;
+  color: rgb(255, 186, 1);
+}
+.icon-admin-dash-linegraph .path3:before {
+  content: "\e987";
+  margin-left: -1.9521484375em;
+  color: rgb(130, 195, 65);
+}
+.icon-admin-dash-linegraph .path4:before {
+  content: "\e988";
+  margin-left: -1.9521484375em;
+  color: rgb(228, 0, 64);
+}
+.icon-admin-dash-spreadsheet .path1:before {
+  content: "\e989";
+  color: rgb(235, 235, 235);
+}
+.icon-admin-dash-spreadsheet .path2:before {
+  content: "\e98a";
+  margin-left: -1.9521484375em;
+  color: rgb(235, 235, 235);
+}
+.icon-admin-dash-spreadsheet .path3:before {
+  content: "\e98b";
+  margin-left: -1.9521484375em;
+  color: rgb(191, 191, 191);
+}
+.icon-admin-dash-spreadsheet .path4:before {
+  content: "\e98c";
+  margin-left: -1.9521484375em;
+  color: rgb(130, 195, 65);
+}
+.icon-admin-dash-spreadsheet .path5:before {
+  content: "\e98d";
+  margin-left: -1.9521484375em;
+  color: rgb(0, 117, 188);
+}
+.icon-icon-mobile:before {
+  content: "\e97a";
+}
+.icon-icon-add-a-card .path1:before {
+  content: "\e97b";
+  color: rgb(112, 116, 128);
+}
+.icon-icon-add-a-card .path2:before {
+  content: "\e97c";
+  margin-left: -1em;
+  color: rgb(112, 116, 128);
+  opacity: 0.5;
+}
+.icon-icon-add-a-card .path3:before {
+  content: "\e97d";
+  margin-left: -1em;
+  color: rgb(0, 118, 188);
+}
+.icon-icon-quit3:before {
+  content: "\e979";
+}
 .icon-icon-tenant-settings:before {
   content: "\e91e";
 }
@@ -168,9 +262,6 @@
 }
 .icon-icon-send:before {
   content: "\e921";
-}
-.icon-icon-copy:before {
-  content: "\e922";
 }
 .icon-icon-clone:before {
   content: "\e923";
@@ -226,9 +317,6 @@
 }
 .icon-icon-review:before {
   content: "\e931";
-}
-.icon-icon-loading:before {
-  content: "\e932";
 }
 .icon-icon-group-management:before {
   content: "\e933";
